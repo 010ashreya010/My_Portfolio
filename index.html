@@ -4,1019 +4,491 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ashreya - Portfolio</title>
-
-    <!--
-    - favicon
-  -->
-    <link
-      rel="shortcut icon"
-      href="./assets/images/avatar-2.png"
-    />
-
-    <!--
-    - custom css link
-  -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-
-    <!--
-    - google font link
-  -->
+    <title>Ashreya Verma – Data Engineer</title>
+    <meta name="description" content="Portfolio of Ashreya Verma – SDE Trainee & Data Engineer at Sigmoid Analytics" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-
   <body>
-    <!--
-    - #MAIN
-  -->
 
-    <main>
-      <!--
-      - #SIDEBAR
-    -->
-
-      <aside class="sidebar" data-sidebar>
-        <div class="sidebar-info">
-          <figure class="avatar-box">
-            <img
-              src="./assets/images/avatar-2.png"
-              alt="Ashreya Verma"
-              width="80"
-            />
-          </figure>
-
-          <div class="info-content">
-            <h1 class="name" title="Ashreya Verma">Ashreya Verma</h1>
-
-            <p class="title">SDE Trainee - Data Engineer at Sigmoid</p>
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-inner">
+        <div class="profile-block">
+          <div class="avatar-ring">
+            <img src="./assets/images/avatar.png" alt="Ashreya Verma" class="avatar"
+              onerror="this.src='https://ui-avatars.com/api/?name=Ashreya+Verma&background=6366f1&color=fff&size=128'" />
           </div>
-
-          <button class="info_more-btn" data-sidebar-btn>
-            <span>Show Contacts</span>
-
-            <ion-icon name="chevron-down"></ion-icon>
-          </button>
+          <h1 class="profile-name">Ashreya Verma</h1>
+          <p class="profile-title">SDE Trainee &middot; Data Engineer</p>
+          <p class="profile-company">@ Sigmoid Analytics</p>
         </div>
 
-        <div class="sidebar-info_more">
-          <div class="separator"></div>
-
-          <ul class="contacts-list">
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="mail-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Email</p>
-
-                <a href="mailto:vermaashreya01@gmail.com" class="contact-link"
-                  >vermaashreya01@gmail.com</a
-                >
-              </div>
-            </li>
-
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="phone-portrait-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Phone</p>
-
-                <a href="tel:+919155093309" class="contact-link"
-                  >+91 9155093309
-                </a>
-              </div>
-            </li>
-
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="calendar-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Birthday</p>
-
-                <time datetime="1982-06-23">November 01, 2002</time>
-              </div>
-            </li>
-
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="location-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Location</p>
-
-                <address>Bangalore, India</address>
-              </div>
-            </li>
-          </ul>
-
-          <div class="separator"></div>
-
-          <ul class="social-list">
-            <li class="social-item">
-              <a href="https://github.com/phoenixx21" class="social-link">
-                <ion-icon name="logo-github"></ion-icon>
-              </a>
-            </li>
-
-            <li class="social-item">
-              <a
-                href="https://www.linkedin.com/in/ashreya-verma-36a4572a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                class="social-link"
-              >
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </a>
-            </li>
-
-          </ul>
+        <div class="contact-block">
+          <a href="mailto:vermaashreya01@gmail.com" class="contact-row">
+            <ion-icon name="mail-outline"></ion-icon>
+            <span>vermaashreya01@gmail.com</span>
+          </a>
+          <a href="tel:+919155093309" class="contact-row">
+            <ion-icon name="call-outline"></ion-icon>
+            <span>+91 91550 93309</span>
+          </a>
+          <div class="contact-row">
+            <ion-icon name="location-outline"></ion-icon>
+            <span>Bangalore, India</span>
+          </div>
+          <div class="contact-row">
+            <ion-icon name="calendar-outline"></ion-icon>
+            <span>November 01, 2002</span>
+          </div>
         </div>
-      </aside>
 
-      <!--
-      - #main-content
-    -->
+        <div class="socials-block">
+          <a href="https://github.com/010ashreya010" class="social-btn" target="_blank" rel="noopener" title="GitHub">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+          <a href="https://www.linkedin.com/in/ashreya-verma-36a4572a7" class="social-btn" target="_blank" rel="noopener" title="LinkedIn">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="mailto:vermaashreya01@gmail.com" class="social-btn" title="Email">
+            <ion-icon name="mail"></ion-icon>
+          </a>
+        </div>
 
-      <div class="main-content">
-        <!--
-        - #NAVBAR
-      -->
-
-        <nav class="navbar">
-          <ul class="navbar-list">
-            <li class="navbar-item">
-              <button class="navbar-link active" data-nav-link>About</button>
-            </li>
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Resume</button>
-            </li>
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Projects</button>
-            </li>
-
-            <!-- <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Blog</button>
-            </li> -->
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Contact</button>
-            </li>
-          </ul>
+        <nav class="side-nav">
+          <a href="#about"      class="nav-link active" data-section="about">About</a>
+          <a href="#experience" class="nav-link"        data-section="experience">Experience</a>
+          <a href="#projects"   class="nav-link"        data-section="projects">Projects</a>
+          <a href="#skills"     class="nav-link"        data-section="skills">Skills</a>
+          <a href="#education"  class="nav-link"        data-section="education">Education</a>
+          <a href="#contact"    class="nav-link"        data-section="contact">Contact</a>
         </nav>
+      </div>
+    </aside>
 
-        <!--
-        - #ABOUT
-      -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
 
-        <article class="about active" data-page="about">
-          <header>
-            <h2 class="h2 article-title">About me</h2>
-          </header>
+    <main class="main-content">
 
-          <section class="about-text">
-            <p>
-              I'm a btech student of Birla Institute of Technology, Mesra, in the branch of Computer Science and Engineering. I am a tech generalist enthusiast with a vast
-              knowledge of Web Development, Data Analysis, and Data Structures and Algorithms. I enjoy turning complex problems into
-              simple and intuitive solutions.
-            </p>
+      <!-- ===== ABOUT ===== -->
+      <section id="about" class="section active">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <div class="title-underline"></div>
+        </div>
 
-            <p>
-              I thrive in dynamic environments where I can leverage my diverse
-              skill set to create impactful, user-friendly products. My passion
-              for technology is driven by a deep curiosity to explore and
-              innovate across different domains. Whether it's building efficient
-              web applications, developing data-driven insights, or managing
-              product lifecycles, I am always eager to take on new challenges
-              and deliver high-quality results.
-            </p>
-          </section>
-
-          <!--
-          - service
-        -->
-
-          <section class="service">
-            <h3 class="h3 service-title">What i'm doing</h3>
-
-            <ul class="service-list">
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/machine-learning.svg"
-                    alt="design icon"
-                    width="40"
-                  />
-                </div>
-  
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Data Analysis</h4>
-  
-                  <p class="service-item-text">
-                    I analyze complex datasets to extract actionable insights, visualize trends, and apply statistical and predictive modeling to drive informed decision-making.
-                  </p>
-                </div>
-              </li>
-  
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-dev.svg"
-                    alt="Web development icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Web development</h4>
-
-                  <p class="service-item-text">
-                    I craft clean sites at a professional level preferably on MERN and PERN stacks. Have 2 experiences in the domain.
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-data.svg"
-                    alt="data structure icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Data Structures And Algorithms</h4>
-
-                  <p class="service-item-text">
-                    I am highly skilled in data structures and algorithms, with a strong understanding of their applications in solving complex computational problems.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </section>
-
-          <!--
-          - testimonials modal
-        -->
-
-          <div class="modal-container" data-modal-container>
-            <div class="overlay" data-overlay></div>
-
-            <section class="testimonials-modal">
-              <button class="modal-close-btn" data-modal-close-btn>
-                <ion-icon name="close-outline"></ion-icon>
-              </button>
-
-              <div class="modal-img-wrapper">
-                <figure class="modal-avatar-box">
-                  <img
-                    src="./assets/images/avatar-1.png"
-                    alt="Daniel lewis"
-                    width="80"
-                    data-modal-img
-                  />
-                </figure>
-
-                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
-              </div>
-
-              <div class="modal-content">
-                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-                <time datetime="2021-06-14">30 Sept, 2024</time>
-
-                <div data-modal-text>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Integer sollicitudin urna felis, at fermentum mi varius vel.
-                    Sed vulputate nibh nec nulla finibus scelerisque. Praesent
-                    commodo lacus non turpis finibus, et volutpat erat
-                    vestibulum. Nulla a erat a neque luctus consequat ut quis
-                    nulla. Pellentesque maximus nulla in egestas auctor. Nunc et
-                    finibus lorem. Curabitur mattis quam vel est egestas
-                    fermentum.
-                  </p>
-                </div>
-              </div>
-            </section>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I am a final-year Computer Science Engineering student at <strong>Birla Institute of Technology, Mesra</strong>, currently working full-time as a <strong>Software Development Engineer Trainee</strong> at <a href="https://sigmoid.com" target="_blank" rel="noopener" class="inline-link">Sigmoid Analytics</a> in Bangalore.</p>
+            <p>I am a tech generalist enthusiast with hands-on experience in <strong>Data Engineering</strong>, <strong>Web Development</strong>, and <strong>Data Analysis</strong>. I've built production-grade ETL pipelines with AWS, Databricks, PySpark, Snowflake, and Apache Airflow, and full-stack web applications on the MERN/PERN stack.</p>
+            <p>I thrive in dynamic environments where I can leverage my diverse skill set to create impactful solutions. Whether it's building efficient data pipelines, developing data-driven insights, or crafting clean web applications, I am always eager to take on new challenges and deliver high-quality results.</p>
           </div>
 
-          <!--
-          - clients
-        -->
-
-          <section class="clients">
-            <h3 class="h3 clients-title">Familiarities</h3>
-
-            <ul class="clients-list has-scrollbar">
-              <li class="clients-item">
-                <a href="#">
-                  <img src="./assets/images/logo-java.svg" alt="client logo" />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo_python.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo_html_css_js.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img src="./assets/images/logo_tf.png" alt="client logo" />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img src="./assets/images/logo_numpy.png" alt="client logo" />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img src="./assets/images/logo_R.png" alt="client logo" />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img src="./assets/images/logo_mern.png" alt="client logo" />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo_vscode.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo_jupyter.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo_github.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-            </ul>
-          </section>
-        </article>
-
-        <!--
-        - #RESUME
-      -->
-
-        <article class="resume" data-page="resume">
-          <header>
-            <h2 class="h2 article-title">Resume 
-              <a href="https://drive.google.com/file/d/1NSsR0FSpZoYU7AC_CW-F4Xgj4kokS4jj/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="resume-link">Link</a>
-            </h2>
-          </header>
-
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-
-              <h3 class="h3">Education</h3>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span class="stat-number">8.62</span>
+              <span class="stat-label">CGPA / 10</span>
             </div>
-
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Birla Institute of Technology, Mesra</h4>
-
-                <span>2022 — 2026</span>
-
-                <p class="timeline-text">
-                  Bachelor of Technology in Computer Science and Engineering.
-                </p>
-              </li>
-            </ol>
-          </section>
-
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-
-              <h3 class="h3">Experience</h3>
+            <div class="stat-card">
+              <span class="stat-number">7.9M+</span>
+              <span class="stat-label">Records Processed</span>
             </div>
+            <div class="stat-card">
+              <span class="stat-number">0</span>
+              <span class="stat-label">Migration Errors</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+          </div>
+        </div>
 
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Web Developer Intern, Tata Steel Utilities and Infrastructure Services Limited</h4>
+        <div class="services-block">
+          <h3 class="sub-title">What I Do</h3>
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon"><ion-icon name="git-network-outline"></ion-icon></div>
+              <h4>Data Engineering</h4>
+              <p>End-to-end ETL/ELT pipelines using PySpark, Airflow, Delta Lake, and cloud-native AWS &amp; Databricks services.</p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon"><ion-icon name="cloud-outline"></ion-icon></div>
+              <h4>Cloud Architecture</h4>
+              <p>Designing scalable solutions on AWS — S3, Glue, Athena, Redshift, Kinesis, Lambda, DynamoDB, IAM, CloudWatch.</p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon"><ion-icon name="globe-outline"></ion-icon></div>
+              <h4>Web Development</h4>
+              <p>Full-stack applications on MERN/PERN stacks with Node.js, Express.js, React, and RESTful API design.</p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon"><ion-icon name="analytics-outline"></ion-icon></div>
+              <h4>Data Analysis</h4>
+              <p>Extracting actionable insights from complex datasets using statistical modeling, Python, R, and SQL.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                <span>May, 2025 - June, 2025</span>
+      <!-- ===== EXPERIENCE ===== -->
+      <section id="experience" class="section">
+        <div class="section-header">
+          <h2 class="section-title">Experience</h2>
+          <div class="title-underline"></div>
+        </div>
 
-                <p class="timeline-text">
-                 
-                    Developed and deployed a full-stack web application using Node.js, Express.js, and MySQL, reducing manual tax data
-                        handling efforts by 75% through digital form-based submissions and user-specific data storage. Engineered a responsive frontend interface with HTML5, CSS3, and JavaScript, improving mobile usability and user
-                        navigation efficiency by over 60%, with interactive login, signup, and password recovery flows. Built and integrated 6+ RESTful API endpoints for authentication, user management, and tax data CRUD operations,
-                        enhancing backend reliability and reducing form submission errors by 90% through robust validation and error handling.
-          
-                </p>
-              </li>
-            </ol>
-          </section>
+        <div class="timeline">
 
-
-          <section class="skill">
-            <h3 class="h3 skills-title">My skills</h3>
-
-            <ul class="skills-list content-card">
-              
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Java</h5>
-                  <data value="90">90%</data>
+          <!-- SDE Trainee -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Software Development Engineer Trainee</h3>
+                  <p class="timeline-company">
+                    <ion-icon name="business-outline"></ion-icon>
+                    Sigmoid Analytics &middot; On-site, Bangalore
+                  </p>
                 </div>
-                
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 90%"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Data Analytics</h5>
-                  <data value="95">95%</data>
-                </div>
-                
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 95%"></div>
-                </div>
-              </li>
-              
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">R</h5>
-                  <data value="90">90%</data>
-                </div>
-                
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 90%"></div>
-                </div>
-              </li>
-              
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">SQL</h5>
-                  <data value="70">70%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 70%"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Python</h5>
-                  <data value="70">70%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 70%"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">JavaScript</h5>
-                  <data value="90">90%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 90%"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">C</h5>
-                  <data value="80">80%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 80%"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Data Structures</h5>
-                  <data value="80">80%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 80%"></div>
-                </div>
-              </li>
-            </ul>
-          </section>
-        </article>
-
-        <!--
-        - #PROJECTS
-      -->
-
-        <article class="portfolio" data-page="projects">
-          <header>
-            <h2 class="h2 article-title">Projects</h2>
-          </header>
-
-          <section class="projects">
-            <ul class="filter-list">
-              <li class="filter-item">
-                <button class="active" data-filter-btn>All</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Data Analysis</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Data Structures And Algorithms</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Web development</button>
-              </li>
-            </ul>
-
-            <div class="filter-select-box">
-              <button class="filter-select" data-select>
-                <div class="select-value" data-selecct-value>
-                  Select category
-                </div>
-
-                <div class="select-icon">
-                  <ion-icon name="chevron-down"></ion-icon>
-                </div>
-              </button>
-
-              <ul class="select-list">
-                <li class="select-item">
-                  <button data-select-item>All</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Data Analysis</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Web development</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Data Structures And Algorithms</button>
-                </li>
-
+                <span class="timeline-period">Jul 2026 &ndash; Present</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Implemented an end-to-end <strong>MySQL 8.0 &rarr; Amazon RDS PostgreSQL</strong> migration using <strong>AWS DMS</strong>, running an initial Full Load followed by continuous Change Data Capture (CDC).</li>
+                <li>Configured MySQL binary logging, an EC2 relay with SSH reverse tunnel, and AWS DMS endpoints and replication tasks to replicate ongoing changes from a locally hosted MySQL database to PostgreSQL.</li>
+                <li>Validated migration accuracy across <strong>15 tables</strong> using source-target row-count reconciliation, MD5/hash-based data validation, and CDC testing, achieving <strong>0 migration errors</strong>.</li>
               </ul>
+              <div class="tag-list">
+                <span class="tag">AWS DMS</span><span class="tag">MySQL</span><span class="tag">PostgreSQL</span><span class="tag">CDC</span><span class="tag">EC2</span><span class="tag">RDS</span>
+              </div>
             </div>
+          </div>
 
-            <ul class="project-list">
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="data analysis"
-              >
-                <a href="https://github.com/phoenixx21/Air-Quality-Analysis">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-5.png"
-                      alt="finance"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Air Quality Analysis</h3>
-
-                  <p class="project-category">Data Analysis</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="https://github.com/phoenixx21/Social-Media-App">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-1.png"
-                      alt="finance"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Social Media App</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="data structures and algorithms"
-              >
-                <a href="https://github.com/phoenixx21/Sorting-Visualizer">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-4.png"
-                      alt="fundo"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Sorting Visualizer</h3>
-
-                  <p class="project-category">Data Structures And Algorithms</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="https://github.com/phoenixx21/Amazon_Clone">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-2.png"
-                      alt="orizon"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Amazon Clone</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="data structures and algorithms"
-              >
-                <a href="https://github.com/phoenixx21/Metro-App">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-3.png"
-                      alt="fundo"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Metro App</h3>
-
-                  <p class="project-category">Data Structures And Algorithms</p>
-                </a>
-              </li>
-            </ul>
-          </section>
-        </article>
-
-        <!-- 
-        - #BLOG
-      -->
-
-        <!-- <article class="blog" data-page="blog">
-          <header>
-            <h2 class="h2 article-title">Blog</h2>
-          </header>
-
-          <section class="blog-posts">
-            <ul class="blog-posts-list">
-              <li class="blog-post-item">
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/blog-1.jpg"
-                      alt="Design conferences in 2022"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">
-                      Design conferences in 2022
-                    </h3>
-
-                    <p class="blog-text">
-                      Veritatis et quasi architecto beatae vitae dicta sunt,
-                      explicabo.
-                    </p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="blog-post-item">
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/blog-2.jpg"
-                      alt="Best fonts every designer"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">
-                      Best fonts every designer
-                    </h3>
-
-                    <p class="blog-text">
-                      Sed ut perspiciatis, nam libero tempore, cum soluta nobis
-                      est eligendi.
-                    </p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="blog-post-item">
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/blog-3.jpg"
-                      alt="Design digest #80"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                    <p class="blog-text">
-                      Excepteur sint occaecat cupidatat no proident, quis
-                      nostrum exercitationem ullam corporis suscipit.
-                    </p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="blog-post-item">
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/blog-4.jpg"
-                      alt="UI interactions of the week"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">
-                      UI interactions of the week
-                    </h3>
-
-                    <p class="blog-text">
-                      Enim ad minim veniam, consectetur adipiscing elit, quis
-                      nostrud exercitation ullamco laboris nisi.
-                    </p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="blog-post-item">
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/blog-5.jpg"
-                      alt="The forgotten art of spacing"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">
-                      The forgotten art of spacing
-                    </h3>
-
-                    <p class="blog-text">
-                      Maxime placeat, sed do eiusmod tempor incididunt ut labore
-                      et dolore magna aliqua.
-                    </p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="blog-post-item">
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/blog-6.jpg"
-                      alt="Design digest #79"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                    <p class="blog-text">
-                      Optio cumque nihil impedit uo minus quod maxime placeat,
-                      velit esse cillum.
-                    </p>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </section>
-        </article> -->
-
-        <!--
-        - #CONTACT
-      -->
-
-        <article class="contact" data-page="contact">
-          <header>
-            <h2 class="h2 article-title">Contact</h2>
-          </header>
-
-          <section class="mapbox" data-mapbox>
-            <figure>
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.333832798601!2d85.43990099999999!3d23.412305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4fb53f0c27be7%3A0x66180c1cf3c5e704!2sBirla%20Institute%20of%20Technology%20-%20Mesra!5e0!3m2!1sen!2sin!4v1751912573750!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </figure>
-          </section>
-
-          <section class="contact-form">
-            <h3 class="h3 form-title">Contact Form</h3>
-            <!-- <form action="send_email.php" method="POST" class="form" data-form> -->
-            <form class="form" data-form>
-                <div class="input-wrapper">
-                    <input
-                        type="text"
-                        name="fullname"
-                        class="form-input"
-                        placeholder="Full name"
-                        required
-                        data-form-input
-                    />
-                    <input
-                        type="email"
-                        name="email"
-                        class="form-input"
-                        placeholder="Email address"
-                        required
-                        data-form-input
-                    />
+          <!-- DE Intern -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Data Engineer Intern</h3>
+                  <p class="timeline-company">
+                    <ion-icon name="business-outline"></ion-icon>
+                    Sigmoid Analytics &middot; On-site, Bangalore
+                  </p>
                 </div>
-                <textarea
-                    name="message"
-                    class="form-input"
-                    placeholder="Your Message"
-                    required
-                    data-form-input
-                ></textarea>
-                <button class="form-btn" type="submit" disabled data-form-btn>
-                    <ion-icon name="paper-plane"></ion-icon>
-                    <span>Send Message</span>
-                </button>
-            </form>
-        </section>
-        </article>
-      </div>
+                <span class="timeline-period">Jan 2026 &ndash; Jul 2026</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Engineered an end-to-end <strong>ETL pipeline</strong> using Python, PySpark, AWS S3, Databricks, Apache Airflow, Delta Lake, and Snowflake to process <strong>7.9M+ records spanning 23 years</strong> of large-scale data.</li>
+                <li>Designed automated <strong>Bronze, Silver, and Gold</strong> data workflows using Apache Airflow and Databricks, orchestrating <strong>6+ data processing and validation workflows</strong> for reliable and scalable data transformation.</li>
+                <li>Implemented <strong>SCD Type 1/2</strong>, Delta Lake optimization, and automated data quality testing across the pipeline, improving data consistency and enabling efficient processing for downstream analytics.</li>
+              </ul>
+              <div class="tag-list">
+                <span class="tag">PySpark</span><span class="tag">AWS S3</span><span class="tag">Databricks</span><span class="tag">Airflow</span><span class="tag">Delta Lake</span><span class="tag">Snowflake</span><span class="tag">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- TSUISL -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Web Developer Intern</h3>
+                  <p class="timeline-company">
+                    <ion-icon name="business-outline"></ion-icon>
+                    Tata Steel Utilities &amp; Infrastructure Services Ltd. &middot; On-site
+                  </p>
+                </div>
+                <span class="timeline-period">May 2025 &ndash; Jun 2025</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Developed and deployed a full-stack web application using <strong>Node.js, Express.js, and MySQL</strong>, reducing manual tax data handling efforts by <strong>75%</strong> through digital form-based submissions and user-specific data storage.</li>
+                <li>Engineered a responsive frontend interface with <strong>HTML5, CSS3, and JavaScript</strong>, improving mobile usability and user navigation efficiency by over <strong>60%</strong>, with interactive login, signup, and password recovery flows.</li>
+                <li>Built and integrated <strong>6+ RESTful API endpoints</strong> for authentication, user management, and tax data CRUD operations, enhancing backend reliability and reducing form submission errors by <strong>90%</strong> through robust validation and error handling.</li>
+              </ul>
+              <div class="tag-list">
+                <span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">MySQL</span><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">REST API</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===== PROJECTS ===== -->
+      <section id="projects" class="section">
+        <div class="section-header">
+          <h2 class="section-title">Projects</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="project-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="data-engineering">Data Engineering</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="data-analysis">Data Analysis</button>
+          <button class="filter-btn" data-filter="dsa">DSA</button>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Ridewave -->
+          <div class="project-card featured" data-category="data-engineering">
+            <div class="project-top">
+              <ion-icon name="folder-open-outline" class="project-folder"></ion-icon>
+              <div class="project-links">
+                <a href="https://github.com/010ashreya010/ridewave-data-platform" target="_blank" rel="noopener" title="View on GitHub"><ion-icon name="logo-github"></ion-icon></a>
+                <span class="project-badge">Featured</span>
+              </div>
+            </div>
+            <h3 class="project-title">Ridewave Data Platform</h3>
+            <p class="project-desc">End-to-end data engineering platform for a ride-hailing startup operating across 6 Indian cities. Ingests raw data from AWS S3 and transforms it into analytics-ready datasets using a Bronze-Silver-Gold medallion architecture.</p>
+            <ul class="project-highlights">
+              <li>Scalable AWS pipelines with S3, Glue, Athena, Redshift Serverless, AutoLoader, and Delta Lake</li>
+              <li>Orchestrated automated data workflows in Databricks with reliable cloud-based ingestion</li>
+              <li>Gold tables ready for downstream business analysis across all 6 cities</li>
+            </ul>
+            <div class="tag-list">
+              <span class="tag">Python</span><span class="tag">PySpark</span><span class="tag">AWS S3</span><span class="tag">Glue</span><span class="tag">Athena</span><span class="tag">Redshift</span><span class="tag">Databricks</span><span class="tag">Delta Lake</span>
+            </div>
+          </div>
+
+          <!-- Air Quality Analysis -->
+          <div class="project-card" data-category="data-analysis">
+            <div class="project-top">
+              <ion-icon name="folder-open-outline" class="project-folder"></ion-icon>
+              <div class="project-links">
+                <a href="https://github.com/phoenixx21/Air-Quality-Analysis" target="_blank" rel="noopener" title="View on GitHub"><ion-icon name="logo-github"></ion-icon></a>
+              </div>
+            </div>
+            <h3 class="project-title">Air Quality Analysis</h3>
+            <p class="project-desc">Analyzed complex air quality datasets to extract actionable insights, visualize pollution trends, and apply statistical and predictive modeling to drive informed decision-making on environmental data.</p>
+            <div class="tag-list">
+              <span class="tag">Python</span><span class="tag">Data Analysis</span><span class="tag">Visualization</span><span class="tag">Statistics</span>
+            </div>
+          </div>
+
+          <!-- Social Media App -->
+          <div class="project-card" data-category="web">
+            <div class="project-top">
+              <ion-icon name="folder-open-outline" class="project-folder"></ion-icon>
+              <div class="project-links">
+                <a href="https://github.com/phoenixx21/Social-Media-App" target="_blank" rel="noopener" title="View on GitHub"><ion-icon name="logo-github"></ion-icon></a>
+              </div>
+            </div>
+            <h3 class="project-title">Social Media App</h3>
+            <p class="project-desc">A full-stack social media web application built with clean architecture, user authentication, post creation, and interactive social features — showcasing PERN/MERN stack expertise.</p>
+            <div class="tag-list">
+              <span class="tag">JavaScript</span><span class="tag">Node.js</span><span class="tag">React</span><span class="tag">SQL</span><span class="tag">Web Dev</span>
+            </div>
+          </div>
+
+          <!-- Amazon Clone -->
+          <div class="project-card" data-category="web">
+            <div class="project-top">
+              <ion-icon name="folder-open-outline" class="project-folder"></ion-icon>
+              <div class="project-links">
+                <a href="https://github.com/phoenixx21/Amazon_Clone" target="_blank" rel="noopener" title="View on GitHub"><ion-icon name="logo-github"></ion-icon></a>
+              </div>
+            </div>
+            <h3 class="project-title">Amazon Clone</h3>
+            <p class="project-desc">A pixel-perfect Amazon e-commerce frontend clone with product listings, cart management, and responsive layout — demonstrating advanced HTML, CSS, and JavaScript skills.</p>
+            <div class="tag-list">
+              <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">Web Dev</span>
+            </div>
+          </div>
+
+          <!-- Sorting Visualizer -->
+          <div class="project-card" data-category="dsa">
+            <div class="project-top">
+              <ion-icon name="folder-open-outline" class="project-folder"></ion-icon>
+              <div class="project-links">
+                <a href="https://github.com/phoenixx21/Sorting-Visualizer" target="_blank" rel="noopener" title="View on GitHub"><ion-icon name="logo-github"></ion-icon></a>
+              </div>
+            </div>
+            <h3 class="project-title">Sorting Visualizer</h3>
+            <p class="project-desc">An interactive web-based visualizer for sorting algorithms (Bubble Sort, Quick Sort, Merge Sort, etc.) with real-time animations and complexity comparisons to aid learning of DSA concepts.</p>
+            <div class="tag-list">
+              <span class="tag">JavaScript</span><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">DSA</span><span class="tag">Algorithms</span>
+            </div>
+          </div>
+
+          <!-- Metro App -->
+          <div class="project-card" data-category="dsa">
+            <div class="project-top">
+              <ion-icon name="folder-open-outline" class="project-folder"></ion-icon>
+              <div class="project-links">
+                <a href="https://github.com/phoenixx21/Metro-App" target="_blank" rel="noopener" title="View on GitHub"><ion-icon name="logo-github"></ion-icon></a>
+              </div>
+            </div>
+            <h3 class="project-title">Metro App</h3>
+            <p class="project-desc">A metro route-finding application implementing graph algorithms (Dijkstra, BFS) to find shortest paths between stations, with an interactive UI and real-world metro network simulation.</p>
+            <div class="tag-list">
+              <span class="tag">Java</span><span class="tag">Graph Algorithms</span><span class="tag">Dijkstra</span><span class="tag">DSA</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Achievements -->
+        <div class="achievements-block">
+          <h3 class="sub-title">Achievements</h3>
+          <div class="achievements-grid">
+            <div class="achievement-card">
+              <ion-icon name="trophy-outline" class="achievement-icon"></ion-icon>
+              <div>
+                <h4>Flipkart GRiD 7.0 &ndash; Semi-Finalist</h4>
+                <p>Advanced to the semi-final round of one of India's most competitive engineering challenges.</p>
+              </div>
+            </div>
+            <div class="achievement-card">
+              <ion-icon name="medal-outline" class="achievement-icon"></ion-icon>
+              <div>
+                <h4>2nd Place &ndash; Quantafile Logo Innovation Jam 2024</h4>
+                <p>Led a team of 4 members to secure 2nd place, overseeing the design and execution of a standout logo concept.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== SKILLS ===== -->
+      <section id="skills" class="section">
+        <div class="section-header">
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="skills-container">
+          <div class="skill-group">
+            <h3 class="skill-group-title"><ion-icon name="code-slash-outline"></ion-icon> Languages</h3>
+            <div class="skill-pills">
+              <span class="pill">Python</span><span class="pill">Java</span><span class="pill">C</span><span class="pill">JavaScript</span><span class="pill">HTML5</span><span class="pill">CSS3</span><span class="pill">SQL</span><span class="pill">R</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title"><ion-icon name="cloud-outline"></ion-icon> Cloud &amp; Data Engineering</h3>
+            <div class="skill-pills">
+              <span class="pill highlight">AWS S3</span><span class="pill highlight">AWS Glue</span><span class="pill highlight">Athena</span><span class="pill highlight">Redshift</span><span class="pill highlight">Lambda</span><span class="pill highlight">Kinesis</span><span class="pill highlight">Firehose</span><span class="pill highlight">DynamoDB</span><span class="pill highlight">IAM</span><span class="pill highlight">CloudWatch</span><span class="pill highlight">Databricks</span><span class="pill highlight">Snowflake</span><span class="pill highlight">Apache Airflow</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title"><ion-icon name="git-network-outline"></ion-icon> Frameworks &amp; Libraries</h3>
+            <div class="skill-pills">
+              <span class="pill">PySpark</span><span class="pill">Delta Lake</span><span class="pill">Spring Boot</span><span class="pill">Node.js</span><span class="pill">Express.js</span><span class="pill">React</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title"><ion-icon name="server-outline"></ion-icon> Databases &amp; Warehousing</h3>
+            <div class="skill-pills">
+              <span class="pill">MySQL</span><span class="pill">PostgreSQL</span><span class="pill">Data Warehousing</span><span class="pill">AWS RDS</span><span class="pill">AWS DMS</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title"><ion-icon name="construct-outline"></ion-icon> Tools &amp; Platforms</h3>
+            <div class="skill-pills">
+              <span class="pill">Git</span><span class="pill">GitHub</span><span class="pill">VS Code</span><span class="pill">Jupyter</span><span class="pill">Google Colab</span><span class="pill">GenAI</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== EDUCATION ===== -->
+      <section id="education" class="section">
+        <div class="section-header">
+          <h2 class="section-title">Education</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="edu-grid">
+          <div class="edu-card">
+            <div class="edu-icon"><ion-icon name="school-outline"></ion-icon></div>
+            <div class="edu-details">
+              <h3>Birla Institute of Technology, Mesra</h3>
+              <p class="edu-degree">B.Tech in Computer Science &amp; Engineering</p>
+              <p class="edu-period">2022 &ndash; 2026</p>
+              <p class="edu-grade">CGPA: <strong>8.62 / 10</strong></p>
+            </div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-icon"><ion-icon name="book-outline"></ion-icon></div>
+            <div class="edu-details">
+              <h3>DAV Public School, Bistupur</h3>
+              <p class="edu-degree">All India Senior School Certificate Examination (AISSCE)</p>
+              <p class="edu-period">May 2021</p>
+              <p class="edu-grade">Percentage: <strong>93.2%</strong></p>
+            </div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-icon"><ion-icon name="ribbon-outline"></ion-icon></div>
+            <div class="edu-details">
+              <h3>Sacred Heart Convent School, Jamshedpur</h3>
+              <p class="edu-degree">Indian Certificate of Secondary Education (ICSE)</p>
+              <p class="edu-period">May 2019</p>
+              <p class="edu-grade">Percentage: <strong>96.6%</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="extracurricular-block">
+          <h3 class="sub-title">Extra-Curricular</h3>
+          <div class="extra-list">
+            <div class="extra-item">
+              <ion-icon name="people-outline"></ion-icon>
+              <p><strong>Chess Team Lead:</strong> Led a team of 14 members in a college chess competition, strategizing and guiding the team to victory in the finals of the annual sports event.</p>
+            </div>
+            <div class="extra-item">
+              <ion-icon name="heart-outline"></ion-icon>
+              <p><strong>NSS Volunteer</strong> (Aug 2022 &ndash; Apr 2024): Actively participated in and organized community service activities under the National Service Scheme, contributing to social welfare and development.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CONTACT ===== -->
+      <section id="contact" class="section">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="contact-page">
+          <p class="contact-intro">I am currently open to new opportunities and collaborations. Whether you have a question, a project idea, or just want to say hi &mdash; my inbox is always open!</p>
+
+          <div class="contact-cards">
+            <a href="mailto:vermaashreya01@gmail.com" class="contact-card">
+              <ion-icon name="mail-outline"></ion-icon>
+              <div><h4>Email</h4><span>vermaashreya01@gmail.com</span></div>
+            </a>
+            <a href="tel:+919155093309" class="contact-card">
+              <ion-icon name="call-outline"></ion-icon>
+              <div><h4>Phone</h4><span>+91 91550 93309</span></div>
+            </a>
+            <a href="https://www.linkedin.com/in/ashreya-verma-36a4572a7" target="_blank" rel="noopener" class="contact-card">
+              <ion-icon name="logo-linkedin"></ion-icon>
+              <div><h4>LinkedIn</h4><span>ashreya-verma-36a4572a7</span></div>
+            </a>
+            <a href="https://github.com/010ashreya010" target="_blank" rel="noopener" class="contact-card">
+              <ion-icon name="logo-github"></ion-icon>
+              <div><h4>GitHub</h4><span>010ashreya010</span></div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>Designed &amp; Built by <strong>Ashreya Verma</strong> &copy; 2026</p>
+      </footer>
     </main>
 
-    <!--
-    - custom js link
-  -->
     <script src="./assets/js/script.js"></script>
-
-    <!--
-    - ionicon link
-  -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-          const form = document.querySelector('.form');
-          const submitBtn = document.querySelector('.form-btn');
-  
-          form.addEventListener('input', function () {
-              const inputs = form.querySelectorAll('input, textarea');
-              const allFilled = [...inputs].every(input => input.value.trim() !== '');
-              submitBtn.disabled = !allFilled;
-          });
-      });
-      </script>
   </body>
 </html>
